@@ -1,0 +1,68 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    /* overflow-x:hidden; */
+}
+
+
+
+.topbar {
+    margin: 2px;
+    display: flex;
+    height: 30px;
+    width: 100%;
+ 
+
+    .icon {
+        margin: 10px 0 0 23px;
+    }
+
+
+}
+
+.leftbar {
+    display: flex;
+    position: relative;
+}
+
+.leftbar p {
+    font-weight: 200;
+    padding: 5px 0 0 2px;
+} 
+.leftbar p:hover {
+    color: orangered;
+    transition: 0.5s;
+}
+
+
+
+.gmail {
+    padding: 0 0 0 5px;
+    margin: -0 0 0 3px;
+}
+.rightbar {
+    display: flex;
+    margin: 0px 0 0 440px;
+    position: relative;
+}
+.rightbar button {
+    font-weight: 200;
+    border: none;
+    background: none;
+}
+.rightbar button:hover {
+    color: orangered;
+    transition: 0.5s;
+}
+
+
+.logo {
+    margin: 18px 0 0 -1287px;
+}
+
+.menubar {
+    position: relative;
+}
+
+.menubar a {
+    margin: 0 0 0 -100px;
+}
