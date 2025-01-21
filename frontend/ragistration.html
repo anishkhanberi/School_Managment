@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Form</title>
+     <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div class="floating-bg">
+        <span style="top: 10%; left: 20%; animation-delay: 0s; animation-duration: 10s;"></span>
+        <span style="top: 50%; left: 70%; animation-delay: 2s; animation-duration: 12s;"></span>
+        <span style="top: 30%; left: 40%; animation-delay: 4s; animation-duration: 14s;"></span>
+        <span style="top: 80%; left: 10%; animation-delay: 6s; animation-duration: 8s;"></span>
+        <span style="top: 60%; left: 80%; animation-delay: 8s; animation-duration: 10s;"></span>
+    </div>
+    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae, voluptates. Numquam perspiciatis, consectetur porro debitis voluptatibus dicta commodi tempore officia ipsam ipsa ullam, provident eos animi illo dignissimos laudantium dolor?
+    <div class="form-container">
+        <h1>Register</h1>
+        <form action="/register" method="POST">
+            <div class="input-group">
+                <input type="text" id="username" name="username" placeholder=" " required>
+                <label for="username">Username</label>
+            </div>
+            <div class="input-group">
+                <input type="email" id="email" name="email" placeholder=" " required>
+                <label for="email">Email</label>
+            </div>
+            <div class="input-group">
+                <input type="text" id="number" name="number" placeholder=" " required>
+                <label for="Number">Number</label>
+            </div>
+            <div class="input-group">
+                <input type="password" id="password" name="password" placeholder=" " required>
+                <label for="password">Password</label>
+            </div>
+            <div class="input-group">
+                <input type="password" id="confirm-password" name="confirm-password" placeholder=" " required>
+                <label for="confirm-password">Confirm Password</label>
+            </div>
+           
+ <button type="submit" class="btn">Register</button>
+            <p>Already have an account? <a href="./login.html">Login here</a></p>
+        </form>
+        
+    </div>
+</body>
+
+</html>
