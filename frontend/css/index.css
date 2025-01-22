@@ -1,68 +1,582 @@
+/* General Styles */
 body {
     font-family: Arial, Helvetica, sans-serif;
-    /* overflow-x:hidden; */
+    overflow-x: hidden;
 }
 
 
 
-.topbar {
-    margin: 2px;
-    display: flex;
-    height: 30px;
-    width: 100%;
- 
 
-    .icon {
-        margin: 10px 0 0 23px;
-    }
-
-
+/* Carousel Styles (Testimonial Slider) */
+ .carousel-inner {
+    text-align: center;
 }
 
-.leftbar {
-    display: flex;
-    position: relative;
-}
-
-.leftbar p {
-    font-weight: 200;
-    padding: 5px 0 0 2px;
+.carousel-item p {
+    font-style: italic;
+    font-size: 18px;
+    color: #555;
 } 
-.leftbar p:hover {
-    color: orangered;
-    transition: 0.5s;
-}
-
-
-
-.gmail {
-    padding: 0 0 0 5px;
-    margin: -0 0 0 3px;
-}
-.rightbar {
+ .menubar {
     display: flex;
-    margin: 0px 0 0 440px;
-    position: relative;
-}
-.rightbar button {
-    font-weight: 200;
-    border: none;
-    background: none;
-}
-.rightbar button:hover {
-    color: orangered;
-    transition: 0.5s;
-}
+    align-items: center;
+    background-color:white;
+    z-index: 1;
+    position: fixed;
+    
+ }
 
 
 .logo {
-    margin: 18px 0 0 -1287px;
-}
-
-.menubar {
     position: relative;
+    height: 100px;
+    width: auto;
+    margin: -3px 0 0 0px;
+    padding: 0 0 0px 40px;
+
 }
 
-.menubar a {
-    margin: 0 0 0 -100px;
+
+.dropdownmenu {
+    display: flex;
+    gap: 25px;
+    padding: 0 0 0 52px ;
+
 }
+
+
+/* Custom Dropdown Styling */
+.dropdownmenu .dropdown-menu {
+    background-color: #f8f9fa;
+    border-radius: 5px;
+}
+
+.dropdownmenu .dropdown-item {
+    color: #333;
+    padding: 10px;
+}
+
+.dropdownmenu .dropdown-item:hover {
+    background-color: #e67e22;
+    color: white;
+    transition: 0.5s;
+}
+
+
+.dropdownmenu a {
+    color: black;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.dropdownmenu a:hover {
+    color: orangered;
+    transition: 0.5s;
+}
+
+/* login/register */
+.login {
+    padding: 10px 20px;
+    background-color: orangered;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.login:hover {
+    background-color: #e67e22;
+}
+
+
+/* Image Slider */
+.imagesilder {
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out; 
+    align-items: center;
+  }
+  
+  .card1, .card2, .card3, .card4, .card5, .card6 {
+    min-width: 100%;
+  }
+  
+  .card1 img, .card2 img, .card3 img, .card4 img, .card5 img, .card6 img {
+    height: 400px;
+    width: 600px;
+    margin: 250px 0 0 380px;
+    display: block; 
+    border-radius:10px ;
+   
+  }
+  
+  
+/* Styling for the How It Works section */
+.how-it-works {
+    background-color: #f9f9f9;
+    padding: 50px 0;
+}
+
+.how-it-works .container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 40px;
+}
+
+.steps {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.step {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    width: 22%;
+    text-align: center;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.step:hover {
+    transform: translateY(-10px);
+}
+
+.step-icon {
+    font-size: 50px;
+    color: #4CAF50;
+    margin-bottom: 20px;
+}
+
+.step h3 {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.step p {
+    font-size: 1em;
+    color: #666;
+}
+
+@media (max-width: 768px) {
+    .steps {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .step {
+        width: 80%;
+        margin-bottom: 30px;
+    }
+}
+
+
+/* Testimonials Section */
+.testimonials {
+    text-align: center;
+    margin: 50px 0;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+.testimonials h2 {
+    font-size: 30px;
+    color: orangered;
+    margin-bottom: 20px;
+}
+
+.testimonial-card {
+    background-color: white;
+    padding: 30px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    border-radius: 10px;
+    width: 45%;
+    display: inline-block;
+    vertical-align: top;
+    transition: transform 0.3s;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-5px);
+}
+
+.testimonial-card h5 {
+    font-size: 20px;
+    color: orangered;
+    margin-top: 15px;
+}
+
+.testimonial-card p {
+    font-style: italic;
+    color: #555;
+}
+
+/* Courses Section */
+.courses {
+    text-align: center;
+    margin: 50px 0;
+}
+
+.courses h2 {
+    font-size: 30px;
+    color: orangered;
+    margin-bottom: 30px;
+}
+
+.course-card {
+    background-color: white;
+    padding: 25px;
+    margin: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    width: 30%;
+    border-radius: 10px;
+    text-align: left;
+    transition: transform 0.3s;
+}
+
+.course-card:hover {
+    transform: scale(1.05);
+}
+
+.course-card h3 {
+    color: orangered;
+    font-size: 24px;
+}
+
+.course-card p {
+    font-size: 16px;
+}
+
+.course-card button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: orangered;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.course-card button:hover {
+    background-color: #e67e22;
+}
+
+/* Admission Process Section */
+.admission-process {
+    background-color: #f4f4f4; 
+    padding: 50px 20px;
+    text-align: center; 
+    border-radius: 10px; 
+    margin-top: 40px; 
+}
+
+.admission-process h2 {
+    font-size: 2.5em;
+    color: #333; 
+    margin-bottom: 20px; 
+}
+
+.admission-process p {
+    font-size: 1.2em; 
+    color: #555;
+    margin-bottom: 30px; 
+}
+
+.admission-process ol {
+    list-style-type: decimal; 
+    font-size: 1.1em; 
+    color: #555; 
+    margin-bottom: 30px; 
+    padding-left: 20px; 
+    text-align: left; 
+}
+
+.admission-process ol li {
+    margin-bottom: 10px; 
+}
+
+.admission-process button {
+    background-color: orangered; 
+    color: white; 
+    padding: 12px 25px; 
+    font-size: 1.1em; 
+    border: none; 
+    cursor: pointer; 
+    border-radius: 5px; 
+    transition: background-color 0.3s ease, transform 0.3s ease; 
+}
+
+/* Button Hover Effect */
+.admission-process button:hover {
+    background-color: orangered; 
+    transform: scale(1.1); 
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .admission-process {
+        padding: 30px 15px; 
+    }
+    
+    .admission-process h2 {
+        font-size: 2em; 
+    }
+
+    .admission-process p,
+    .admission-process ol {
+        font-size: 1em;
+    }
+}
+
+/* Contact Us Section */
+.contact-us {
+    background-color: #f9f9f9; 
+    padding: 50px 20px; 
+    text-align: center;
+    border-radius: 10px; 
+    margin-top: 40px;
+ }
+
+.contact-us h2 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 20px; 
+}
+
+.contact-us form {
+    max-width: 600px; 
+    margin: 0 auto; 
+}
+
+.contact-us input,
+.contact-us textarea {
+    width: 100%; 
+    padding: 12px; 
+    margin-bottom: 20px; 
+    border: 1px solid #ddd; 
+    border-radius: 5px; 
+    font-size: 1em; 
+    color: #333; 
+    background-color: #fff;
+}
+
+.contact-us textarea {
+    height: 150px; 
+    resize: vertical; 
+}
+
+.contact-us button {
+    background-color: orangered; 
+    color: white; 
+    padding: 12px 25px;
+    font-size: 1.1em; 
+    border: none;
+    cursor: pointer; 
+    border-radius: 5px; 
+    transition: background-color 0.3s ease, transform 0.3s ease; 
+}
+
+/* Button Hover Effect */
+.contact-us button:hover {
+    background-color: orangered; 
+    transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .contact-us {
+        padding: 30px 15px; 
+    }
+
+    .contact-us h2 {
+        font-size: 2em; 
+    }
+
+    .contact-us input,
+    .contact-us textarea,
+    .contact-us button {
+        font-size: 1em; 
+    }
+}
+
+
+/* Instructors Section */
+.instructors {
+    text-align: center;
+    margin: 50px 0;
+}
+
+.instructors h2 {
+    font-size: 30px;
+    color: orangered;
+    margin-bottom: 30px;
+}
+
+.instructor-card {
+    display: inline-block;
+    width: 30%;
+    text-align: center;
+    margin: 20px;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.instructor-card:hover {
+    transform: translateY(-5px);
+}
+
+.instructor-card img {
+    width: 80%;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.instructor-card h3 {
+    color: orangered;
+    font-size: 20px;
+}
+
+.instructor-card p {
+    color: #555;
+}
+
+/* Contact Form Section */
+.contact-form {
+    background-color: #f9f9f9;
+    padding: 40px;
+    margin: 50px 0;
+    text-align: center;
+}
+
+.contact-form h2 {
+    font-size: 30px;
+    color: orangered;
+    margin-bottom: 30px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 80%;
+    padding: 15px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    padding: 15px 30px;
+    background-color: orangered;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+    background-color: #e67e22;
+}
+
+   /* Footer styling */
+   footer {
+    background-color: #333;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+footer .footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+footer .footer-container div {
+    width: 20%;
+    margin: 10px 0;
+}
+
+footer h3 {
+    margin-bottom: 15px;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+footer p {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    margin: 5px 0;
+}
+
+footer a:hover {
+    color: #0082c5;
+}
+
+/* Social media icons */
+.social-icons a {
+    margin: 0 10px;
+    font-size: 20px;
+}
+
+/* Newsletter form styling */
+.newsletter input[type="email"] {
+    padding: 10px;
+    width: 200px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.newsletter input[type="submit"] {
+    padding: 10px;
+    background-color: #0082c5;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.newsletter input[type="submit"]:hover {
+    background-color: #e67e22;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    footer .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer .footer-container div {
+        width: 100%;
+        text-align: center;
+    }
+}
+
