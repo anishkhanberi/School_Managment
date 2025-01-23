@@ -101,6 +101,7 @@ body {
     display: flex;
     transition: transform 0.5s ease-in-out; 
     align-items: center;
+    margin-top: 100px;
   }
   
   .card1, .card2, .card3, .card4, .card5, .card6 {
@@ -108,11 +109,11 @@ body {
   }
   
   .card1 img, .card2 img, .card3 img, .card4 img, .card5 img, .card6 img {
-    height: 400px;
-    width: 600px;
-    margin: 250px 0 0 380px;
-    display: block; 
-    border-radius:10px ;
+    height: 270px;
+    width: 100%;
+    /* margin: 250px 0 0 380px; */
+    display: block;
+    border-radius: 10px;
    
   }
   
